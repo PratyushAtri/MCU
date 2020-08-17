@@ -1,0 +1,20 @@
+{
+  "name": "mcu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PratyushAtri/MCU.git"
+  },
+  "author": "Pratyush Atri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PratyushAtri/MCU/issues"
+  },
+  "homepage": "https://github.com/PratyushAtri/MCU#readme"
+}
