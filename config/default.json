@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://pratyush123:pratyush@marvelcinematicuniverse.my7ko.mongodb.net/MarvelCinematicUniverse?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://pratyush123:pratyush@marvelcinematicuniverse.my7ko.mongodb.net/MarvelCinematicUniverse?retryWrites=true&w=majority",
+    "jwtSecret": "KILLERPHNX"
 }
