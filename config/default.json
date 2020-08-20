@@ -1,4 +1,6 @@
 {
     "mongoURI": "mongodb+srv://pratyush123:pratyush@marvelcinematicuniverse.my7ko.mongodb.net/MarvelCinematicUniverse?retryWrites=true&w=majority",
-    "jwtSecret": "KILLERPHNX"
+    "jwtSecret": "KILLERPHNX",
+    "githubClientID": "09958fa3f250ddea0f4a",
+    "githubSecret": "cf1af8de7428904761adf1fcf13257249caf26be"
 }
