@@ -25,12 +25,9 @@ const App = () => {
                       <Route exact path='/login' component={ Login } />
                   </Switch>
               </section>
-
           </Fragment>
-
       </Router>
-
   );
-}
+};
 
 export default App;
