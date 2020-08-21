@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const BasicReact = props => {
     return (
@@ -9,8 +9,23 @@ const BasicReact = props => {
     )
 };
 
-// BasicReact.propTypes = {
+BasicReact.propTypes = {
 
-// };
+};
+
+export default BasicReact;
+
+
+
+
+import React, { Fragment } from 'react';
+
+const BasicReact = () => {
+    return (
+        <div>
+
+        </div>
+    )
+};
 
 export default BasicReact;
