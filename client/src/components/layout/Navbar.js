@@ -29,11 +29,15 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
             </li>
             <li>
                 <Link to="/register">
+                    <i className="fas fa-user-plus"></i>
+                    {'  '}
                     Register
                 </Link>
             </li>
             <li>
                 <Link to="/login">
+                    <i className="fas fa-sign-in-alt"></i>
+                    {'  '}
                     Login
                 </Link>
             </li>
