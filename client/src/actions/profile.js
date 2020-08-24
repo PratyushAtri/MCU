@@ -2,6 +2,8 @@ import axios from 'axios';
 import { setAlert } from "./alert";
 
 import {
+    CLEAR_PROFILE,
+    DELETE_ACCOUNT,
     GET_PROFILE,
     PROFILE_ERROR,
     UPDATE_PROFILE
@@ -129,5 +131,68 @@ export const addEducation = ( formData, history ) => async dispatch => {
             type: PROFILE_ERROR,
             payload: { msg: err.response.statusText, status: err.response.status }
         });
+    }
+};
+
+// Delete Experience
+
+export const deleteExperience = id => async dispatch => {
+    try {
+        const res = await axios.delete(`api/profile/experience/${id}`);
+
+        dispatch({
+            type: UPDATE_PROFILE,
+            payload: res.data
+        });
+
+        dispatch(setAlert('Experience removed from your Profile', 'primary'));
+    }
+    catch (err) {
+        dispatch({
+            type: PROFILE_ERROR,
+            payload: { msg: err.response.statusText, status: err.response.status }
+        });
+    }
+};
+
+// Delete Education
+
+export const deleteEducation = id => async dispatch => {
+    try {
+        const res = await axios.delete(`api/profile/education/${id}`);
+
+        dispatch({
+            type: UPDATE_PROFILE,
+            payload: res.data
+        });
+
+        dispatch(setAlert('Education removed from your Profile', 'primary'));
+    }
+    catch (err) {
+        dispatch({
+            type: PROFILE_ERROR,
+            payload: { msg: err.response.statusText, status: err.response.status }
+        });
+    }
+};
+
+// Delete account/profile
+
+export const deleteAccount = () => async dispatch => {
+    if (window.confirm('Are you sure? Your Account will be deleted permanently')) {
+        try {
+            const res = await axios.delete(`api/profile`);
+
+            dispatch({ type: CLEAR_PROFILE });
+            dispatch({ type: DELETE_ACCOUNT });
+
+            dispatch(setAlert('Your Account has been permanently deleted', 'primary'));
+        }
+        catch (err) {
+            dispatch({
+                type: PROFILE_ERROR,
+                payload: { msg: err.response.statusText, status: err.response.status }
+            });
+        }
     }
 };
