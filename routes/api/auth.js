@@ -45,7 +45,7 @@ router.post('/', [
         let user = await User.findOne({ email });  
         
         if (!user) {
-            return res.status(400).json({ errors: [{ msg: `Invalid Credentials` }] });
+            return res.status(400).json({ errors: [{ msg: `Email is required` }] });
         }
 
         // Check if password is correct
@@ -53,7 +53,7 @@ router.post('/', [
         const isMatch = await bcrypt.compare( password, user.password );
 
         if (!isMatch) {
-            return res.status(400).json({ errors: [{ msg: `Invalid Credentials` }] });
+            return res.status(400).json({ errors: [{ msg: `Password is required` }] });
         }
 
         // Return JWT

@@ -73,7 +73,11 @@
   .text-dark {
     color: var(--dark-color);
   }
-  
+
+  .text-danger {
+    color: #ff0000;
+  }
+
   /* Padding */
   .p {
     padding: 0.5rem;
