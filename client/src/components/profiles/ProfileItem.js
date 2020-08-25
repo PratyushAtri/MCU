@@ -10,10 +10,10 @@ const ProfileItem = ({ profile: {
     skills
 } }) => {
     return (
-        <div className='profile bg-light'>
+        <div className='profile bg-dark'>
             <img src={avatar} alt="" className="round-img"/>
             <div>
-                <h2>{name}</h2>
+                <h2 className='text-warning' >{name}</h2>
                 <p>
                     { status } { company && <span> at {company}</span> }
                 </p>

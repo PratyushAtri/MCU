@@ -33,6 +33,10 @@
   img {
     width: 100%;
   }
+
+  b {
+    color: var(--primary-color);
+  }
   
   /* Utilities */
   .container {
@@ -76,6 +80,10 @@
 
   .text-danger {
     color: #ff0000;
+  }
+
+  .text-warning {
+    color: #f5cf45;
   }
 
   /* Padding */
@@ -208,6 +216,14 @@
     color: #333;
     border: #ccc solid 1px;
   }
+
+.btn-warning,
+.bg-warning,
+.badge-warning,
+.alert-warning {
+  background: #f5cf45;
+  color: #160707;
+}
   
   .btn:hover {
     opacity: 0.8;
