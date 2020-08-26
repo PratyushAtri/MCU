@@ -150,7 +150,11 @@
     transition: opacity 0.2s ease-in;
     outline: none;
   }
-  
+
+  .btn-float {
+    float: right;
+  }
+
   .badge {
     font-size: 0.8rem;
     padding: 0.1rem;
