@@ -9,6 +9,13 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     const authLinks = (
         <ul>
             <li>
+                <Link to="/posts">
+                    <i className="far fa-clipboard"></i>
+                    {' '}
+                    <span className='hide-sm' >Posts</span>
+                </Link>
+            </li>
+            <li>
                 <Link to="/profiles">
                     <i className="fas fa-user-friends"></i>
                     {' '}
